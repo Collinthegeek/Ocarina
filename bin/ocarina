@@ -1,0 +1,6 @@
+#!/bin/bash
+mkdir ~/.ocarina
+cd ~/.ocarina
+wget https://raw.githubusercontent.com/Collinthegeek/Ocarina/master/ocarina.sh
+chmod +x ocarina.sh
+./ocarina.sh

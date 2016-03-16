@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Ocarina  
+Keywords=Game
+Categories=Games
+MimeType=application/game
+Exec=gnome-terminal -e ocarina                                 
+StartupNotify=true
+Terminal=true 
+Type=Application
+X-GNOME-FullName=Ocarina  
+
