@@ -30,7 +30,8 @@ echo
 echo "* A boy named $name is seen sleeping inside of a treehouse."
 echo
 echo "Deku Tree : The children of the forest, the Kokiri, live here with me. Each Kokiri has his or her own guardian fairy."
-echo "However, there is one boy who does not have a fairy..."
+echo "    However, there is one boy who does not have a fairy..."
+echo
 echo "* $name dreams of Hyrule Castle Town amid a rainstorm. The town's drawbridge lowers, allowing a horse carrying a girl and a woman to leave."
 echo "* The girl looks at $name, who stands outside of the town walls, as the horse gallops out of sight."
 echo 
@@ -49,14 +50,43 @@ echo "      of justice and truth..."
 echo "      Navi...go now! Find our young friend and guide him to me... I do not have much time left. Fly, Navi, fly! The fate of the forest, nay,"
 echo "      the world, depends upon thee!"
 echo
+read -p "[Press Enter]"
+3:
+clear
 echo "* Navi leaves the Deku Tree, and looks about within the Kokiri's area of the forest. After some difficulties, lastly flying into a fence,"
 echo "* Navi arrives at $name's treehouse and finds him sleeping."
-
+echo "Navi : Hello, $name! Wake up! The Great Deku Tree wants to talk to you!"
+echo "      $name, get up!"
+echo "      Hey! C'mon! Can Hyrule's destiny really depend on such a lazy boy?"
+echo
+echo "* $name awakens."
+echo
+echo "Navi : You finally woke up! I'm Navi the fairy! The Great Deku Tree asked me to be your partner from now on! Nice to meet you!"
+echo "      The Great Deku Tree has summoned you! So let's get going, right now!"
+echo
+echo "* As $name exits the treehouse, a female Kokiri approaches."
+echo
+echo "Saria : Yahoo! Hi, $name!"
+echo
+echo "* $name climbs down the ladder."
+echo
+echo "Saria : Wow! A fairy!! Finally, a fairy came to you, Link! Wow! That's great news! I'm so happy for you! Now you're a true Kokiri, $name!"
+#                                                                                                                               ^Rude
+echo "      Is that right? The Great Deku Tree has summoned you? It's quite an honor to talk to the Great Deku Tree! I'll wait for you here."
+echo "      Go see the Great Deku Tree!"
+echo 
+echo "**************************************************************************************************************************************************************"
+echo "                                                      There's a bunch of combat training stuff here."
+echo "             Let me know if you think I should modify it to remove the N64 specific controls and make it sound like a scripted lesson." 
+echo "**************************************************************************************************************************************************************"
+echo "***END*** (For now)"
+read -p "[Press Enter]"
+exit 1
 
 read command
 if [ "$command" = "first command" ]; then
    echo "command results"
-   jumpto 3
+   jumpto 4
 elif [ "$command" = "second command" ]; then
      echo "results"
      jumpto 2
@@ -64,7 +94,7 @@ else
 echo "not found message"
 jumpto 2
 fi
-3:
+4:
 echo "second desc."
 read command
 if [ "$command" = "etc" ]; then
@@ -72,6 +102,6 @@ if [ "$command" = "etc" ]; then
    exit
 else
    echo "etc"
-   jumpto 3
+   jumpto 4
 fi
 Status 
